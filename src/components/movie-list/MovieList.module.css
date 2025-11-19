@@ -1,0 +1,31 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.15);
+}
+
+.cardLink {
+  display: block;
+  height: 100%;
+}
+
+.title {
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0;
+}
+
