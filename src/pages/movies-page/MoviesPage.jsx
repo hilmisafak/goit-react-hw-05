@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { searchMovies } from '../../api/tmdb';
 import MovieList from '../../components/movie-list/MovieList';
+import styles from './MoviesPage.module.css';
 
 function MoviesPage() {
   const [movies, setMovies] = useState([]);
@@ -23,13 +24,22 @@ function MoviesPage() {
   };
 
   return (
-    <>
-      <form onSubmit={handleSubmit}>
-        <input name="query" defaultValue={query} />
-        <button type="submit">Search</button>
+    <div className={styles.container}>
+      <form onSubmit={handleSubmit} className={styles.searchForm}>
+        <div className={styles.searchWrapper}>
+          <input
+            name="query"
+            defaultValue={query}
+            placeholder="Search for movies..."
+            className={styles.searchInput}
+          />
+          <button type="submit" className={styles.searchButton}>
+            Search
+          </button>
+        </div>
       </form>
       {movies.length > 0 && <MovieList movies={movies} />}
-    </>
+    </div>
   );
 }
 

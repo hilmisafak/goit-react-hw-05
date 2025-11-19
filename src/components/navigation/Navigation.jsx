@@ -10,7 +10,6 @@ function Navigation() {
       <div className={styles.inner}>
         <div className={styles.brand}>
           <span className={styles.logo}>MovieScope</span>
-          <span className={styles.tagline}>Discover your next favorite film</span>
         </div>
         <nav className={styles.nav}>
           <NavLink to="/" className={getLinkClass}>

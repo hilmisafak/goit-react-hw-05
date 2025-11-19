@@ -2,9 +2,9 @@
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(8, 12, 24, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.1);
 }
 
 .inner {
@@ -28,14 +28,14 @@
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #f8fafc;
+  color: #0f172a;
 }
 
 .tagline {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: rgba(248, 250, 252, 0.6);
+  color: rgba(15, 23, 42, 0.6);
 }
 
 .nav {
@@ -44,7 +44,7 @@
 }
 
 .link {
-  color: rgba(248, 250, 252, 0.8);
+  color: rgba(15, 23, 42, 0.8);
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -55,13 +55,14 @@
 }
 
 .link:hover {
-  color: #f8fafc;
-  border-color: rgba(248, 250, 252, 0.25);
+  color: #0f172a;
+  border-color: rgba(15, 23, 42, 0.25);
+  background: rgba(15, 23, 42, 0.05);
 }
 
 .active {
   background: linear-gradient(120deg, #e11d48, #fb923c);
-  color: #0f172a;
+  color: #fff;
   border-color: transparent;
 }
 
